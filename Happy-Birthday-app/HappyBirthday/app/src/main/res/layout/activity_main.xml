@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.android.happybirthday.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#ff0004"
+        android:id="@+id/textView"
+        android:layout_marginStart="55dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="You are invited to:" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/concertphoto"
+        android:id="@+id/imageView4"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0004"
+        android:text="Download your present from here:"
+        android:id="@+id/textView3"
+        android:textSize="20sp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="DOWNLOAD"
+        android:layout_marginBottom="28dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0004"
+        android:id="@+id/textView2"
+        android:text="See you on Friday midnight!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0004"
+        android:text="P.S. Happy Birthday!!!"
+        android:id="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"/>
+
+
+</RelativeLayout>
